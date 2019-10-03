@@ -1,0 +1,39 @@
+{{#partial "content"}}
+
+  <h1>List of videos found</h1>
+    <hr>
+    <div class="row">
+        {{#each stream}}
+
+            <div class="card mb-3" style="max-width: 540px;">
+<!--                <div class="row no-gutters">-->
+                    <div class="col-md-4">
+                        <iframe
+                                width="350"
+                                height="250"
+                                src={{video}}
+                                frameborder="0"
+                                allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
+                                allowfullscreen
+                                controls
+                                style="box-shadow: 20px 10px 5px rgba(0,0,0,0.7); border-radius:50px;"
+                        ></iframe>
+                    </div>
+                    <div class="col-md-8">
+                        <div class="card-body">
+                            <h2 class="card-title">{{caption}}</h2>
+                            <p class="card-text">This is a wider card with supporting text below as a natural lead-in to additional content. This content is a little bit longer.</p>
+                            <p class="card-text"><small class="text-muted">Last updated 3 mins ago</small></p>
+                                 <button><a href="/delete/{{id}}">delete</a></button>
+                        </div>
+                    </div>
+<!--                </div>-->
+            </div>
+
+
+        {{/each}}
+    </div>
+
+
+{{/partial}}
+{{> layout.hbs}}

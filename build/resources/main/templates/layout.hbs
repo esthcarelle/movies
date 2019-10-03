@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+    <title>{{#block "title"}}Online Streaming{{/block}}</title>
+    <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
+    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+      <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <nav class="navbar navbar-default navbar-fixed-top">
+          <div class="container">
+
+              <div class="navbar-header page-scroll">
+                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav-navbar-collapse">
+                      MENU <span class="fa fa-bars color-white"></span>
+                  </button>
+                  <!-- Logo -->
+                  <a class="navbar-brand" href="#page-top">Your Name</a>
+              </div>
+
+              <!-- Navigation Links -->
+              <div class="collapse navbar-collapse" id="mainnav-navbar-collapse">
+                  <ul class="nav navbar-nav navbar-right">
+                      <li class="page-scroll">
+                          <a href="#introduction">Home</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#portfolio">Portfolio</a>
+                      </li>
+                      <li class="page-scroll">
+                          <a href="#contact">Contact</a>
+                      </li>
+                  </ul>
+              </div>
+
+          </div>
+      </nav>
+    <style>
+    body { overflow-x: hidden; }
+
+    p { font-size: 20px; }
+
+    p.small { font-size: 16px; }
+
+    a,
+    a:hover,
+    a:focus,
+    a:active,
+    a.active {
+        outline: 0;
+        color: #18bc9c;
+    }
+
+    h1,
+    h2,
+    h3,
+    h4,
+    h5,
+    h6 {
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+    }
+
+    .img-centered {
+        margin: 0 auto;
+    }
+
+    /* Navigation Bar Styles
+    /* -------------------------------------*/
+    .navbar {
+        text-transform: uppercase;
+        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
+        font-weight: 700;
+    }
+
+    .navbar a:focus {
+        outline: 0;
+    }
+
+    .navbar .navbar-nav {
+        letter-spacing: 1px;
+    }
+
+    .navbar .navbar-nav li a:focus {
+        outline: 0;
+    }
+
+    .navbar-default .navbar-nav > li > a {
+        color: #FFF;
+    }
+    .navbar-nav > li > a {
+        padding-top: 19.5px;
+        padding-bottom: 19.5px;
+    }
+
+    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    	color: #0066FF;
+    	background-color: transparent;
+    }
+
+    .navbar-default {
+        background-color: #2C3E50;
+        border-color: transparent;
+    }
+
+    .navbar-default,
+    .navbar-inverse {
+        border: 0;
+    }
+
+    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
+        margin-left: -15px;
+    }
+    .navbar-default .navbar-brand {
+        color: #FFF;
+    }
+
+    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
+        color: #0066ff;
+        background-color: transparent;
+    }
+
+    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
+        color: #FFF;
+        background-color: #1A242F;
+    }
+
+    .navbar-default .navbar-toggle {
+        border-color: #FFF;
+    	color: #FFF;
+    }
+
+    /* All Section Styles
+    /* -------------------------------------*/
+        body{
+
+                  background-image:url('https://wallpaperaccess.com/full/329583.jpg');
+                  background-repeat:no-repeat;
+                  background-attachment:fixed;
+                  background-size:cover;
+                  color:white;
+               }
+
+    </style>
+
+</head>
+
+<body>
+    <div>
+        <div class="container">
+            <div>
+                {{#block "content"}}
+                {{/block}}
+
+            </div>
+        </div>
+    </div>
+
+{{#block "footer"}}
+</body>
+</html>
+{{/block}}
