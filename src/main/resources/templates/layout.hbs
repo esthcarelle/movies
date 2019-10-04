@@ -4,133 +4,185 @@
 
     <title>{{#block "title"}}Online Streaming{{/block}}</title>
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
-    <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet">
+{{!--     <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet"> --}}
       <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
-      <nav class="navbar navbar-default navbar-fixed-top">
-          <div class="container">
+{{!--       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> --}}
+{{!--       <nav class="navbar navbar-default navbar-fixed-top"> --}}
+{{!--           <div class="container"> --}}
 
-              <div class="navbar-header page-scroll">
-                  <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav-navbar-collapse">
-                      MENU <span class="fa fa-bars color-white"></span>
-                  </button>
-                  <!-- Logo -->
-                  <a class="navbar-brand" href="#page-top">Your Name</a>
-              </div>
+{{!--               <div class="navbar-header page-scroll"> --}}
+{{!--                   <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#mainnav-navbar-collapse"> --}}
+{{!--                       MENU <span class="fa fa-bars color-white"></span> --}}
+{{!--                   </button> --}}
+{{!--                   <!-- Logo --> --}}
+{{!--                   <a class="navbar-brand" href="#page-top">Your Name</a> --}}
+{{!--               </div> --}}
 
-              <!-- Navigation Links -->
-              <div class="collapse navbar-collapse" id="mainnav-navbar-collapse">
-                  <ul class="nav navbar-nav navbar-right">
-                      <li class="page-scroll">
-                          <a href="#introduction">Home</a>
-                      </li>
-                      <li class="page-scroll">
-                          <a href="#portfolio">Portfolio</a>
-                      </li>
-                      <li class="page-scroll">
-                          <a href="#contact">Contact</a>
-                      </li>
-                  </ul>
-              </div>
+{{!--               <!-- Navigation Links --> --}}
+{{!--               <div class="collapse navbar-collapse" id="mainnav-navbar-collapse"> --}}
+{{!--                   <ul class="nav navbar-nav navbar-right"> --}}
+{{!--                       <li class="page-scroll"> --}}
+{{!--                           <a href="#introduction">Home</a> --}}
+{{!--                       </li> --}}
+{{!--                       <li class="page-scroll"> --}}
+{{!--                           <a href="#portfolio">Portfolio</a> --}}
+{{!--                       </li> --}}
+{{!--                       <li class="page-scroll"> --}}
+{{!--                           <a href="#contact">Contact</a> --}}
+{{!--                       </li> --}}
+{{!--                   </ul> --}}
+{{!--               </div> --}}
 
-          </div>
-      </nav>
+{{!--           </div> --}}
+{{!--       </nav> --}}
     <style>
-    body { overflow-x: hidden; }
+   *, *:before, *:after {
+     box-sizing: border-box;
+   }
 
-    p { font-size: 20px; }
+   html {
+     font-size: 100%;
+   }
 
-    p.small { font-size: 16px; }
+   body {
+     font-family: acumin-pro, system-ui, sans-serif;
+     margin: 0;
+     display: grid;
+     grid-template-rows: auto 1fr auto;
+     font-size: 14px;
+     background-color: #f4f4f4;
+     align-items: start;
+     min-height: 100vh;
+   }
 
-    a,
-    a:hover,
-    a:focus,
-    a:active,
-    a.active {
-        outline: 0;
-        color: #18bc9c;
-    }
+   .footer {
+     display: flex;
+     flex-flow: row wrap;
+     padding: 30px 30px 20px 30px;
+     color: #2f2f2f;
+     background-color: #fff;
+     border-top: 1px solid #e5e5e5;
+     opacity:0.7;
+     margin-top:10%;
+   }
 
-    h1,
-    h2,
-    h3,
-    h4,
-    h5,
-    h6 {
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-weight: 700;
-    }
+   .footer > * {
+     flex:  1 100%;
+   }
 
-    .img-centered {
-        margin: 0 auto;
-    }
+   .footer__addr {
+     margin-right: 1.25em;
+     margin-bottom: 2em;
+   }
 
-    /* Navigation Bar Styles
-    /* -------------------------------------*/
-    .navbar {
-        text-transform: uppercase;
-        font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-        font-weight: 700;
-    }
+   .footer__logo {
+     font-family: 'Pacifico', cursive;
+     font-weight: 400;
+     text-transform: lowercase;
+     font-size: 1.5rem;
+   }
 
-    .navbar a:focus {
-        outline: 0;
-    }
+   .footer__addr h2 {
+     margin-top: 1.3em;
+     font-size: 15px;
+     font-weight: 400;
+   }
 
-    .navbar .navbar-nav {
-        letter-spacing: 1px;
-    }
+   .nav__title {
+     font-weight: 400;
+     font-size: 15px;
+   }
 
-    .navbar .navbar-nav li a:focus {
-        outline: 0;
-    }
+   .footer address {
+     font-style: normal;
+     color: #999;
+   }
 
-    .navbar-default .navbar-nav > li > a {
-        color: #FFF;
-    }
-    .navbar-nav > li > a {
-        padding-top: 19.5px;
-        padding-bottom: 19.5px;
-    }
+   .footer__btn {
+     display: flex;
+     align-items: center;
+     justify-content: center;
+     height: 36px;
+     max-width: max-content;
+     background-color: rgb(33, 33, 33, 0.07);
+     border-radius: 100px;
+     color: #2f2f2f;
+     line-height: 0;
+     margin: 0.6em 0;
+     font-size: 1rem;
+     padding: 0 1.3em;
+   }
 
-    .navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
-    	color: #0066FF;
-    	background-color: transparent;
-    }
+   .footer ul {
+     list-style: none;
+     padding-left: 0;
+   }
 
-    .navbar-default {
-        background-color: #2C3E50;
-        border-color: transparent;
-    }
+   .footer li {
+     line-height: 2em;
+   }
 
-    .navbar-default,
-    .navbar-inverse {
-        border: 0;
-    }
+   .footer a {
+     text-decoration: none;
+   }
 
-    .navbar > .container .navbar-brand, .navbar > .container-fluid .navbar-brand {
-        margin-left: -15px;
-    }
-    .navbar-default .navbar-brand {
-        color: #FFF;
-    }
+   .footer__nav {
+     display: flex;
+   	flex-flow: row wrap;
+   }
 
-    .navbar-default .navbar-brand:hover, .navbar-default .navbar-brand:focus {
-        color: #0066ff;
-        background-color: transparent;
-    }
+   .footer__nav > * {
+     flex: 1 50%;
+     margin-right: 1.25em;
+   }
 
-    .navbar-default .navbar-nav > .active > a, .navbar-default .navbar-nav > .active > a:hover, .navbar-default .navbar-nav > .active > a:focus {
-        color: #FFF;
-        background-color: #1A242F;
-    }
+   .nav__ul a {
+     color: #999;
+   }
 
-    .navbar-default .navbar-toggle {
-        border-color: #FFF;
-    	color: #FFF;
-    }
+   .nav__ul--extra {
+     column-count: 2;
+     column-gap: 1.25em;
+   }
 
+   .legal {
+     display: flex;
+     flex-wrap: wrap;
+     color: #999;
+   }
+
+   .legal__links {
+     display: flex;
+     align-items: center;
+   }
+
+   .heart {
+     color: #2f2f2f;
+   }
+
+   @media screen and (min-width: 24.375em) {
+     .legal .legal__links {
+       margin-left: auto;
+     }
+   }
+
+   @media screen and (min-width: 40.375em) {
+     .footer__nav > * {
+       flex: 1;
+     }
+
+     .nav__item--extra {
+       flex-grow: 2;
+     }
+
+     .footer__addr {
+       flex: 1 0px;
+     }
+
+     .footer__nav {
+       flex: 2 0px;
+     }
+   }
     /* All Section Styles
     /* -------------------------------------*/
         body{
@@ -156,6 +208,103 @@
             </div>
         </div>
     </div>
+    <header>
+      <!-- Content -->
+    </header>
+
+    <main>
+      <!-- Content -->
+    </main>
+
+    <footer class="footer">
+      <div class="footer__addr">
+        <h1 class="footer__logo">Something</h1>
+
+        <h2>Contact</h2>
+
+        <address>
+          5534 Somewhere In. The World 22193-10212<br>
+
+          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+        </address>
+      </div>
+
+      <ul class="footer__nav">
+        <li class="nav__item">
+          <h2 class="nav__title">Media</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Online</a>
+            </li>
+
+            <li>
+              <a href="#">Print</a>
+            </li>
+
+            <li>
+              <a href="#">Alternative Ads</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item nav__item--extra">
+          <h2 class="nav__title">Technology</h2>
+
+          <ul class="nav__ul nav__ul--extra">
+            <li>
+              <a href="#">Hardware Design</a>
+            </li>
+
+            <li>
+              <a href="#">Software Design</a>
+            </li>
+
+            <li>
+              <a href="#">Digital Signage</a>
+            </li>
+
+            <li>
+              <a href="#">Automation</a>
+            </li>
+
+            <li>
+              <a href="#">Artificial Intelligence</a>
+            </li>
+
+            <li>
+              <a href="#">IoT</a>
+            </li>
+          </ul>
+        </li>
+
+        <li class="nav__item">
+          <h2 class="nav__title">Legal</h2>
+
+          <ul class="nav__ul">
+            <li>
+              <a href="#">Privacy Policy</a>
+            </li>
+
+            <li>
+              <a href="#">Terms of Use</a>
+            </li>
+
+            <li>
+              <a href="#">Sitemap</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="legal">
+        <p>&copy; 2019 Something. All rights reserved.</p>
+
+        <div class="legal__links">
+          <span>Made with <span class="heart">♥</span> remotely from Anywhere</span>
+        </div>
+      </div>
+    </footer>
 
 {{#block "footer"}}
 </body>

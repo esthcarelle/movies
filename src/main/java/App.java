@@ -23,6 +23,12 @@ public class App {
 
             return new ModelAndView(model, "success.hbs");
         },new HandlebarsTemplateEngine());
+
+        get("/successAdmin", (request, response) -> {
+            Map<String, Object> model = new HashMap<String, Object>();
+
+            return new ModelAndView(model, "successAdmin.hbs");
+        },new HandlebarsTemplateEngine());
         get("/userPage", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
             model.put("uploads",Upload.getAll());
@@ -73,6 +79,8 @@ public class App {
 
             return new ModelAndView(model, "adminSignUp.hbs");
         }, new HandlebarsTemplateEngine());
+
+
         post("/login", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             String name = request.queryParams("name");
@@ -83,7 +91,7 @@ public class App {
                 response.redirect("/");
             }
             else{
-                response.redirect("/success");
+                response.redirect("/successAdmin");
             }
             return new ModelAndView(model, "signup.hbs");
         }, new HandlebarsTemplateEngine());
@@ -127,19 +135,21 @@ public class App {
             model.put("uploads",Upload.getAll());
             return new ModelAndView(model, "stream.hbs");
         },new HandlebarsTemplateEngine());
+
+
         post("/search", (request, response) -> {
             Map<String, Object> model = new HashMap<>();
             String caption= request.queryParams("caption");
             System.out.println(Upload.getAllSearched(caption));
             model.put("stream",Upload.getAllSearched(caption));
-            response.redirect("/search");
+//            response.redirect("/search");
             return new ModelAndView(model, "search-details.hbs");
 
         }, new HandlebarsTemplateEngine());
-
-        String link="https://btsmediablog.files.wordpress.com/2016/12/rick-warren-the-purpose-driven-life-what-on-earth-am-i-here-for.pdf";
-        File out =new File("/home/esther/Downloads");
-        new Thread(new Download(link,out)).start();
+//
+//        String link="https://btsmediablog.files.wordpress.com/2016/12/rick-warren-the-purpose-driven-life-what-on-earth-am-i-here-for.pdf";
+//        File out =new File("/home/esther/Downloads");
+//        new Thread(new Download(link,out)).start();
 
         get("/search", (request, response) -> {
             Map<String, Object> model = new HashMap<String, Object>();
