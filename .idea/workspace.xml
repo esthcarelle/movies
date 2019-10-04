@@ -2,9 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="362e9b73-58ff-4832-9ed7-55a18e371635" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/successAdmin.hbs" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Procfile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/src/main/resources/templates/index.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.bin" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/executionHistory/executionHistory.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/fileContent/fileContent.lock" afterDir="false" />
@@ -14,21 +15,29 @@
       <change beforePath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/5.2.1/javaCompile/javaCompile.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" beforeDir="false" afterPath="$PROJECT_DIR$/.gradle/buildOutputCleanup/buildOutputCleanup.lock" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build.gradle" beforeDir="false" afterPath="$PROJECT_DIR$/build.gradle" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/classes/java/main/App.class" beforeDir="false" afterPath="$PROJECT_DIR$/build/classes/java/main/App.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/adminSignUp.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/adminSignUp.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/layout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/login.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/loginAdmin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/loginAdmin.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/search-details.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/search-details.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/signup.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/stream.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/stream.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/success.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/success.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/build/resources/main/templates/upload.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/upload.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/build/resources/main/templates/userPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/build/resources/main/templates/userPage.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/java/App.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/App.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/java/DB.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/java/DB.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/adminSignUp.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/adminSignUp.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/layout.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/login.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/login.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/loginAdmin.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/loginAdmin.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/search-details.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/search-details.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/signup.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/signup.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/stream.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/stream.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/success.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/success.hbs" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/main/resources/templates/upload.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/upload.hbs" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/main/resources/templates/userPage.hbs" beforeDir="false" afterPath="$PROJECT_DIR$/src/main/resources/templates/userPage.hbs" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
@@ -41,6 +50,18 @@
     <projectState path="$PROJECT_DIR$">
       <ProjectState />
     </projectState>
+  </component>
+  <component name="ExternalProjectsManager">
+    <system id="GRADLE">
+      <state>
+        <projects_view>
+          <tree_state>
+            <expand />
+            <select />
+          </tree_state>
+        </projects_view>
+      </state>
+    </system>
   </component>
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">

@@ -1,4 +1,70 @@
 {{#partial "content"}}
+<div class="back">
+<body style="background-image:url('http://www.sompaisoscatalans.cat/simage/56/566450/wallpapers-justice-league.jpg');">
+
+<nav>
+<ul>
+  <li><a class="active" href="/home">HOME</a></li>
+  <li><a href="/stream">Videos </a></li>
+  <li><a href="/home">logout</a></li>
+  <li><a href="#footer">Contacts</a></li>
+</ul>
+</nav>
+
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Poiret+One|Unica+One&display=swap');
+
+
+nav ul {
+  list-style-type: none;
+  underline:none;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+  width: 60%;
+  margin-left:20%;
+
+
+}
+
+nav li {
+
+  font-family: 'Unica One', cursive;
+  font-size: 20px;
+ text-decoration: none;
+  float: left;
+  display: inline-block;
+  white-space: nowrap;
+  width: 25%;
+}
+
+ nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  underline:none;
+  text-decoration: none;
+}
+
+ nav li a:hover:not(.active) {
+  underline:none;
+ text-decoration: none;
+  color: #D8FC62;
+  border:solid 2px #D8FC62;
+}
+
+nav .active {
+  underline:none;
+  border: solid 2px hotpink;
+  color: hotpink;
+   text-decoration: none;
+}
+
+</style>
+
 
 <form  action="/search" method="post">
 {{!-- Search:<input type="text" name="caption"> --}}
@@ -19,14 +85,14 @@
                         <div class="card">
                             <div class="card-image">
                                 <div class="embed-responsive embed-responsive-16by9">
-                                    <iframe width="350" height="315" src={{video}} frameborder="0" allowfullscreen></iframe>
+                                    <iframe width="350" height="315" src={{video}} frameborder="0" style="border-radius:20px;" allowfullscreen></iframe>
                                 </div>
 
 
                             </div><!-- card image -->
 
                             <div class="card-content">
-                                <span class="card-title"><h3 style="color:black; font-weight:bolder">{{caption}}</h3></span>
+                                <span class="card-title"><h3 style="color:white; font-weight:bolder">{{caption}}</h3></span>
 
                             </div><!-- card content -->
                             <hr>
@@ -38,7 +104,11 @@
 
             {{/each}}
         </div>
+        </div>
 <style>
+ body{
+    background-image:('https://www.10wallpaper.com/wallpaper/medium/1712/DC_Comics_Superheroes_Justice_League_2017_4k_HD_medium.jpg');
+ }
 .search {
   display: block;
   margin-top: 50px;
@@ -118,6 +188,7 @@ input#search-bar {
   }
 }
 </style>
+</body>
 
 {{/partial}}
 

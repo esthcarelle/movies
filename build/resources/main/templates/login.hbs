@@ -1,8 +1,73 @@
 {{#partial "content"}}
+<body>
+
+<nav>
+<ul>
+  <li><a class="active" href="/home">HOME</a></li>
+  <li><a href="/login">Login</a></li>
+  <li><a href="/">Sign up</a></li>
+  <li><a href="#footer">Contacts</a></li>
+</ul>
+</nav>
+</body>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Poiret+One|Unica+One&display=swap');
+
+
+nav ul {
+  list-style-type: none;
+  position: absolute;
+  underline:none;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+  width: 60%;
+  margin-left:15%;
+
+
+}
+
+nav li {
+
+  font-family: 'Unica One', cursive;
+  font-size: 20px;
+ text-decoration: none;
+  float: left;
+  display: inline-block;
+  white-space: nowrap;
+  width: 25%;
+}
+
+ nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  underline:none;
+  text-decoration: none;
+}
+
+ nav li a:hover:not(.active) {
+  underline:none;
+ text-decoration: none;
+  color: #D8FC62;
+  border:solid 2px #D8FC62;
+}
+
+nav .active {
+  underline:none;
+  border: solid 2px hotpink;
+  color: hotpink;
+   text-decoration: none;
+}
+
+</style>
 
 {{!-- <link href='https://fonts.googleapis.com/css?family=Montserrat' rel='stylesheet' type='text/css'> --}}
 <body>
-
+<div style="padding-top:15%">
 <div class="login">
  <a href="/login"> <h2 class="active">sign in</h2></a>
 
@@ -33,6 +98,7 @@
     <a href="#">Forgot Password?</a>
   </form>
 
+</div>
 </div>
 </body>
 <style>

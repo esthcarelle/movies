@@ -1,0 +1,67 @@
+{{#partial "content"}}
+<body>
+
+
+    <section class="home">
+
+        <h1 style="text-align:center;">Welcome to Agaflix</h1>
+
+        <div class="row">
+
+            <div class="col-md-6">
+
+                <div class="button">
+                    <a class="btn btn-success" style="font-size:25px;" href="/loginAdmin">Admin</a>
+                </div>
+
+            </div>
+
+            <div class="col-md-6" >
+
+                <div class="button">
+                    <a class="btn btn-success" style="font-size:25px;" href="/login">User</a>
+                </div>
+
+            </div>
+
+        </div>
+
+    </section>
+
+    </div>
+    </body>
+ <style>
+        body{
+        font-family: 'Mansalva',cursive;
+        background : url('http://www.sompaisoscatalans.cat/simage/56/566450/wallpapers-justice-league.jpg');
+         background-repeat:no-repeat;
+           background-attachment:fixed;
+           background-size:cover;
+           color:white;
+}
+        .home{
+          margin:0 auto;
+           width:50%;
+           background-color:rgba(0,0,0,0.6);
+           padding:3%;
+           margin-top:15%;
+           color:white;
+           box-shadow: 5px 10px 10px rgba(255,255,255,0.5);
+           border-radius:5%;
+        }
+        .home>h1{
+           font-size:70px;
+        }
+        .home>div>a{
+           font-size:25px;
+           margin-top:10px;
+           margin-left:300px;
+        }
+        a{
+           margin-top:20px;
+           margin-left:80px;
+        }
+}
+    </style>
+{{/partial}}
+{{> layout.hbs}}

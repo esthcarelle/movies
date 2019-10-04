@@ -6,7 +6,9 @@
     <link rel='stylesheet' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.2.0/css/bootstrap.min.css'>
 {{!--     <link href="https://fonts.googleapis.com/css?family=Grenze&display=swap" rel="stylesheet"> --}}
       <meta name="viewport" content="width=device-width,initial-scale=1,maximum-scale=1,user-scalable=no">
-{{!--       <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet"> --}}
+      <link href="https://fonts.googleapis.com/css?family=Josefin+Sans&display=swap" rel="stylesheet">
+      <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+                 <script src="https://code.jquery.com/jquery-3.4.0.min.js"integrity="sha256-BJeo0qm959uMBGb65z40ejJYGSgR7REI4+CW1fNKwOg="crossorigin="anonymous"></script>
 {{!--       <nav class="navbar navbar-default navbar-fixed-top"> --}}
 {{!--           <div class="container"> --}}
 
@@ -35,164 +37,161 @@
 
 {{!--           </div> --}}
 {{!--       </nav> --}}
-    <style>
-   *, *:before, *:after {
-     box-sizing: border-box;
-   }
+   <style>
+    *, *:before, *:after {
+      box-sizing: border-box;
+    }
 
-   html {
-     font-size: 100%;
-   }
+    html {
+      font-size: 100%;
+    }
 
-   body {
-     font-family: acumin-pro, system-ui, sans-serif;
-     margin: 0;
-     display: grid;
-     grid-template-rows: auto 1fr auto;
-     font-size: 14px;
-     background-color: #f4f4f4;
-     align-items: start;
-     min-height: 100vh;
-   }
+    body {
+      font-family: acumin-pro, system-ui, sans-serif;
+      margin: 0;
+      display: grid;
+      grid-template-rows: auto 1fr auto;
+      font-size: 14px;
+      background-color: #f4f4f4;
+      align-items: start;
+      min-height: 100vh;
+    }
 
-   .footer {
-     display: flex;
-     flex-flow: row wrap;
-     padding: 30px 30px 20px 30px;
-     color: #2f2f2f;
-     background-color: #fff;
-     border-top: 1px solid #e5e5e5;
-     opacity:0.7;
-     margin-top:10%;
-   }
+    .footer {
+      display: flex;
+      flex-flow: row wrap;
+      padding: 30px 30px 20px 30px;
+      color: #2f2f2f;
+      background-color: #fff;
+      border-top: 1px solid #e5e5e5;
+      margin-top:10%;
+    }
 
-   .footer > * {
-     flex:  1 100%;
-   }
+    .footer > * {
+flex:  1 100%;
+    }
 
-   .footer__addr {
-     margin-right: 1.25em;
-     margin-bottom: 2em;
-   }
+    .footer__addr {
+      margin-right: 1.25em;
+      margin-bottom: 2em;
+    }
 
-   .footer__logo {
-     font-family: 'Pacifico', cursive;
-     font-weight: 400;
-     text-transform: lowercase;
-     font-size: 1.5rem;
-   }
+    .footer__logo {
+      font-family: 'Pacifico', cursive;
+      font-weight: 400;
+      text-transform: lowercase;
+      font-size: 1.5rem;
+    }
 
-   .footer__addr h2 {
-     margin-top: 1.3em;
-     font-size: 15px;
-     font-weight: 400;
-   }
+    .footer__addr h2 {
+      margin-top: 1.3em;
+      font-size: 15px;
+      font-weight: 400;
+    }
 
    .nav__title {
-     font-weight: 400;
-     font-size: 15px;
-   }
+      font-weight: 400;
+      font-size: 15px;
+    }
 
    .footer address {
-     font-style: normal;
-     color: #999;
+      font-style: normal;
+      color: #999;
    }
 
-   .footer__btn {
-     display: flex;
+    .footer__btn {
+      display: flex;
      align-items: center;
      justify-content: center;
-     height: 36px;
-     max-width: max-content;
-     background-color: rgb(33, 33, 33, 0.07);
-     border-radius: 100px;
-     color: #2f2f2f;
-     line-height: 0;
-     margin: 0.6em 0;
-     font-size: 1rem;
-     padding: 0 1.3em;
+      height: 36px;
+      max-width: max-content;
+      background-color: rgb(33, 33, 33, 0.07);
+      border-radius: 100px;
+      color: #2f2f2f;
+      line-height: 0;
+      margin: 0.6em 0;
+      font-size: 1rem;
+      padding: 0 1.3em;
    }
 
-   .footer ul {
-     list-style: none;
-     padding-left: 0;
-   }
+    .footer ul {
+      list-style: none;
+      padding-left: 0;
+    }
 
    .footer li {
      line-height: 2em;
+    }
+
+    .footer a {
+      text-decoration: none;
+    }
+
+    .footer__nav {
+      display: flex;
+    	flex-flow: row wrap;
    }
 
-   .footer a {
-     text-decoration: none;
-   }
+    .footer__nav > * {
+    flex: 1 50%;
+      margin-right: 1.25em;
+    }
 
-   .footer__nav {
-     display: flex;
-   	flex-flow: row wrap;
-   }
-
-   .footer__nav > * {
-     flex: 1 50%;
-     margin-right: 1.25em;
-   }
-
-   .nav__ul a {
+    .nav__ul a {
      color: #999;
    }
 
-   .nav__ul--extra {
+    .nav__ul--extra {
      column-count: 2;
-     column-gap: 1.25em;
-   }
+      column-gap: 1.25em;
+    }
 
    .legal {
      display: flex;
      flex-wrap: wrap;
      color: #999;
-   }
-
-   .legal__links {
+    }
+  .legal__links {
      display: flex;
      align-items: center;
-   }
+    }
 
    .heart {
      color: #2f2f2f;
    }
 
    @media screen and (min-width: 24.375em) {
-     .legal .legal__links {
-       margin-left: auto;
-     }
+      .legal .legal__links {
+        margin-left: auto;
+    }
    }
 
-   @media screen and (min-width: 40.375em) {
+    @media screen and (min-width: 40.375em) {
      .footer__nav > * {
        flex: 1;
      }
 
-     .nav__item--extra {
-       flex-grow: 2;
-     }
+      .nav__item--extra {
+        flex-grow: 2;
+      }
 
-     .footer__addr {
-       flex: 1 0px;
-     }
+      .footer__addr {
+        flex: 1 0px;
+      }
 
-     .footer__nav {
-       flex: 2 0px;
-     }
-   }
-    /* All Section Styles
-    /* -------------------------------------*/
-        body{
-
-                  background-image:url('https://wallpaperaccess.com/full/329583.jpg');
-                  background-repeat:no-repeat;
-                  background-attachment:fixed;
-                  background-size:cover;
-                  color:white;
-               }
+      .footer__nav {
+        flex: 2 0px;
+      }
+    }
+     /* All Section Styles
+     /* -------------------------------------*/
+         body{
+                   background-image:url('https://wallpaperaccess.com/full/329583.jpg');
+                   background-repeat:no-repeat;
+                   background-attachment:fixed;
+                   background-size:cover;
+                   color:white;
+                }
 
     </style>
 
@@ -225,7 +224,7 @@
         <address>
           5534 Somewhere In. The World 22193-10212<br>
 
-          <a class="footer__btn" href="mailto:example@gmail.com">Email Us</a>
+          <a class="footer__btn" href="mailto:cates2506@gmail.com">Email Us</a>
         </address>
       </div>
 

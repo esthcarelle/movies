@@ -1,9 +1,75 @@
 {{#partial "content"}}
+
+<body>
+<nav>
+<ul>
+  <li><a class="active" href="/home">HOME</a></li>
+  <li><a href="/login">Login</a></li>
+  <li><a href="#contact">CONTACT</a></li>
+  <li><a href="#about">ABOUT</a></li>
+</ul>
+</nav>
+</body>
+<style>
+
+@import url('https://fonts.googleapis.com/css?family=Barriecito|Poiret+One|Unica+One&display=swap');
+
+
+nav ul {
+  list-style-type: none;
+  position: absolute;
+  underline:none;
+  padding: 0;
+  overflow: hidden;
+  background-color: black;
+  display: inline-block;
+  width: 60%;
+
+
+}
+
+nav li {
+
+  font-family: 'Unica One', cursive;
+  font-size: 40px;
+ text-decoration: none;
+  float: left;
+  display: inline-block;
+  white-space: nowrap;
+  width: 25%;
+}
+
+ nav li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  underline:none;
+  text-decoration: none;
+}
+
+ nav li a:hover:not(.active) {
+  underline:none;
+ text-decoration: none;
+  color: #D8FC62;
+  border:solid 2px #D8FC62;
+}
+
+nav .active {
+  underline:none;
+  border: solid 2px hotpink;
+  color: hotpink;
+   text-decoration: none;
+}
+
+</style>
+<div style="padding-top:20%">
 <div class="well" style="width:70%;color:black;text-align:center;margin:auto;opacity:0.7;background-color:black">
 <img src="http://www.pngall.com/wp-content/uploads/2016/07/Success-Free-Download-PNG.png" width="90%">
 <br>
 <h1 style="color:white">Click below to login</h1>
 <a href="/login"><img src="https://img.icons8.com/color/48/000000/cinema-.png" width=10%></a>
+</div>
 </div>
 {{/partial}}
 {{> layout.hbs}}
