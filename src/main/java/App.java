@@ -86,7 +86,7 @@ public class App {
             SignUp newUser= new SignUp(name, email, password);
             newUser.saveAdmin(newUser);
             model.put("users",newUser);
-            response.redirect("/success");
+            response.redirect("/successAdmin");
 
             return new ModelAndView(model, "adminSignUp.hbs");
         }, new HandlebarsTemplateEngine());
@@ -99,10 +99,10 @@ public class App {
             List<SignUp> user=Login.getUser(name,password);
             System.out.println(user);
             if(user.isEmpty()){
-                response.redirect("/");
+                response.redirect("/login");
             }
             else{
-                response.redirect("/successAdmin");
+                response.redirect("/userPage");
             }
             return new ModelAndView(model, "signup.hbs");
         }, new HandlebarsTemplateEngine());
@@ -114,10 +114,10 @@ public class App {
             List<SignUp> admin=Login.getAdmins(name,password);
             System.out.println(admin);
             if(admin.isEmpty()){
-                response.redirect("/");
+                response.redirect("/loginAdmin");
             }
             else{
-                response.redirect("/success");
+                response.redirect("/upload");
             }
             return new ModelAndView(model, "adminSignUp.hbs");
         }, new HandlebarsTemplateEngine());
